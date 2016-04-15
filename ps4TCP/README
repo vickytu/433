@@ -1,0 +1,19 @@
+This README contains information about how to run my code. If you'd like to see screen captures, the design document, or the discussion questions, please see the "assignment4" Word doc.
+
+[All commands assume you are in folder fishnetJava-1.8-link]
+
+To compile:
+-Open one new terminal
+-In terminal 1, type: make all
+
+To run the emulator:
+-Open three new terminals
+-In terminal 1, type: perl trawler.pl 8888 script/three.topo
+-In terminal 2, type: perl fishnet.pl emulate localhost 8888 10000.
+-In terminal 3, type: perl fishnet.pl emulate localhost 8888 10001.
+-In terminal 2, type "server 21 2" 
+-In terminal 3, type "transfer 0 21 40 50000"
+
+To run te simulator:
+-Open one new terminal
+-In terminal 1, type: perl fishnet.pl simulate 2 scripts/test.fish
